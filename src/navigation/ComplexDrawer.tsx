@@ -15,6 +15,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {styles} from '../theme/appTheme';
+import {Tabs} from './Tabs';
 //import {createStackNavigator} from '@react-navigation/stack';
 
 //this is a generic
@@ -36,7 +37,7 @@ export const ComplexDrawer = () => {
     <Drawer.Navigator
       drawerType={width >= 600 ? 'permanent' : 'front'}
       drawerContent={props => <MenuContent {...props} />}>
-      <Drawer.Screen name="StackNavigator" component={StackNavigator} />
+      <Drawer.Screen name="Tabs" component={Tabs} />
       {/*<Drawer.Screen name="SettingsScreen" component={SettingsStackScreen} />*/}
       <Drawer.Screen name="SettingsScreen" component={SettingsScreen} />
     </Drawer.Navigator>
@@ -61,7 +62,7 @@ const MenuContent = ({
       <View style={styles.menuContainer}>
         <TouchableOpacity
           style={styles.menuBtn}
-          onPress={() => navigation.navigate('StackNavigator')}>
+          onPress={() => navigation.navigate('Tabs')}>
           <Text style={styles.menuItem}>Navigation stack</Text>
         </TouchableOpacity>
 

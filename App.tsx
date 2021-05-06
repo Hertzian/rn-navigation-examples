@@ -5,6 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 //import {StackNavigator} from './src/navigation/StackNavigator';
 //import {BasicDrawer} from './src/navigation/BasicDrawer';
 import {ComplexDrawer} from './src/navigation/ComplexDrawer';
+import {Tabs} from './src/navigation/Tabs';
 
 const App = () => {
   return (
