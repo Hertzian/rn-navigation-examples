@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from 'react-native-vector-icons/Ionicons';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import {ChatScreen} from '../screens/ChatScreen';
 import {ContactsScreen} from '../screens/ContactsScreen';
@@ -39,19 +40,27 @@ export const TopTabNav = () => {
 
           switch (route.name) {
             case 'ChatScreen':
-              iconName = 'Ch';
+              iconName = 'chatbubble-ellipses';
               break;
 
             case 'ContactsScreen':
-              iconName = 'Co';
+              iconName = 'people';
               break;
 
             case 'AlbumsScreen':
-              iconName = 'Al';
+              iconName = 'albums';
               break;
           }
 
-          return <Text style={{color: colors.primary}}>{iconName}</Text>;
+          return (
+            //<Text style={{color: colors.primary}}>
+            <Icon
+              name={`${iconName}-outline`}
+              size={25}
+              color={colors.primary}
+            />
+            //</Text>
+          );
         },
       })}>
       <Screen

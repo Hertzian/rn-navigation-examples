@@ -1,5 +1,6 @@
 import React from 'react';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+import Icon from 'react-native-vector-icons/Ionicons';
 import {Tab1Screen} from '../screens/Tab1Screen';
 import {StackNavigator} from './StackNavigator';
 import {Text} from 'react-native';
@@ -25,19 +26,23 @@ export const TabsAN = () => {
 
           switch (route.name) {
             case 'Tab1Screen':
-              iconName = 'T1';
+              iconName = 'magnet';
               break;
 
             case 'Tab2Screen':
-              iconName = 'T2';
+              iconName = 'stopwatch';
               break;
 
             case 'StackNavigator':
-              iconName = 'St';
+              iconName = 'file-tray-stacked';
               break;
           }
 
-          return <Text style={{color}}>{iconName}</Text>;
+          return (
+            //<Text style={{color}}>
+            <Icon name={`${iconName}-outline`} size={25} color={'white'} />
+            //</Text>
+          );
         },
       })}>
       <Screen

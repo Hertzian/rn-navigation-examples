@@ -14,7 +14,8 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
-import {styles} from '../theme/appTheme';
+import Icon from 'react-native-vector-icons/Ionicons';
+import {styles, colors} from '../theme/appTheme';
 import {Tabs} from './Tabs';
 //import {createStackNavigator} from '@react-navigation/stack';
 
@@ -63,13 +64,19 @@ const MenuContent = ({
         <TouchableOpacity
           style={styles.menuBtn}
           onPress={() => navigation.navigate('Tabs')}>
-          <Text style={styles.menuItem}>Navigation stack</Text>
+          <Text style={styles.menuItem}>
+            <Icon name="compass-outline" size={30} color={colors.primary} />{' '}
+            Navigation stack
+          </Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.menuBtn}
           onPress={() => navigation.navigate('SettingsScreen')}>
-          <Text style={styles.menuItem}>Settings</Text>
+          <Text style={styles.menuItem}>
+            <Icon name="settings-outline" size={30} color={colors.primary} />{' '}
+            Settings
+          </Text>
         </TouchableOpacity>
       </View>
     </DrawerContentScrollView>

@@ -30,6 +30,21 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 
+  touchOpaBtn: {
+    backgroundColor: colors.primary,
+    alignItems: 'center',
+    textAlignVertical: 'top',
+    padding: 10,
+    marginVertical: 10,
+    //flexDirection: 'row',
+  },
+
+  touchOpaTxt: {
+    color: 'white',
+    textAlign: 'center',
+    textAlignVertical: 'center',
+  },
+
   avatarContainer: {
     marginTop: 20,
     alignItems: 'center',
