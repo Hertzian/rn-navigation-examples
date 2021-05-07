@@ -1,11 +1,11 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Tab1Screen} from '../screens/Tab1Screen';
-import {Tab2Screen} from '../screens/Tab2Screen';
 //import {Tab3Screen} from '../screens/Tab3Screen';
 import {StackNavigator} from './StackNavigator';
 import {colors} from '../theme/appTheme';
 import {Text} from 'react-native';
+import {TopTabNav} from './TopTabNav';
 
 const {Navigator, Screen} = createBottomTabNavigator();
 
@@ -58,7 +58,7 @@ export const TabsIOS = () => {
       <Screen
         name="Tab2Screen"
         options={{title: 'Tab2'}}
-        component={Tab2Screen}
+        component={TopTabNav}
       />
       <Screen
         name="StackNavigator"
