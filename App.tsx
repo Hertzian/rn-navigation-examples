@@ -1,11 +1,8 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-//import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-//import {StackNavigator} from './src/navigation/StackNavigator';
-//import {BasicDrawer} from './src/navigation/BasicDrawer';
+import {StyleSheet, Text, View} from 'react-native';
 import {ComplexDrawer} from './src/navigation/ComplexDrawer';
-import {Tabs} from './src/navigation/Tabs';
 
 const App = () => {
   return (
@@ -16,3 +13,12 @@ const App = () => {
 };
 
 export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
