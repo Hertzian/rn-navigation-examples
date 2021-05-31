@@ -35,7 +35,9 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     textAlignVertical: 'top',
     padding: 10,
+    paddingVertical: 30,
     marginVertical: 10,
+    borderRadius: 5,
     //flexDirection: 'row',
   },
 
@@ -62,7 +64,8 @@ export const styles = StyleSheet.create({
   },
 
   menuBtn: {
-    marginVertical: 10,
+    //marginVertical: 10,
+    padding: 15,
   },
 
   menuItem: {

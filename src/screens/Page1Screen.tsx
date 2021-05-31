@@ -14,7 +14,7 @@ export const Page1Screen = ({navigation}: Props) => {
       headerLeft: () => (
         //<Button title="menu" onPress={() => navigation.toggleDrawer()} />
         <TouchableOpacity
-          style={{padding: 15}}
+          style={styles.menuBtn}
           onPress={() => navigation.toggleDrawer()}>
           <Text>
             <Icon name={'menu-outline'} size={30} color={colors.primary} />
@@ -37,7 +37,9 @@ export const Page1Screen = ({navigation}: Props) => {
         onPress={() => navigation.navigate('Page2Screen')}>
         <Text style={styles.touchOpaTxt}>
           Go to page 2{' '}
-          <Icon name={'arrow-forward-circle-outline'} size={30} color="white" />
+          {/*
+              <Icon name={'arrow-forward-circle-outline'} size={30} color="white" />
+            */}
         </Text>
       </TouchableOpacity>
 
