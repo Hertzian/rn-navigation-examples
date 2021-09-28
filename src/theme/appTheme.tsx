@@ -1,16 +1,16 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native'
 
 export const colors = {
-  primary: '#5856D6',
-};
+  primary: '#5856D6'
+}
 
 export const styles = StyleSheet.create({
   globalMargin: {
-    marginHorizontal: 20,
+    marginHorizontal: 20
   },
 
   title: {
-    fontSize: 30,
+    fontSize: 30
   },
 
   btnBig: {
@@ -21,13 +21,13 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: 10,
-    marginVertical: 10,
+    marginVertical: 10
   },
 
   btnBigText: {
     color: 'white',
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
 
   touchOpaBtn: {
@@ -37,38 +37,38 @@ export const styles = StyleSheet.create({
     padding: 10,
     paddingVertical: 30,
     marginVertical: 10,
-    borderRadius: 5,
+    borderRadius: 5
     //flexDirection: 'row',
   },
 
   touchOpaTxt: {
     color: 'white',
     textAlign: 'center',
-    textAlignVertical: 'center',
+    textAlignVertical: 'center'
   },
 
   avatarContainer: {
     marginTop: 20,
-    alignItems: 'center',
+    alignItems: 'center'
   },
 
   avatar: {
     width: 150,
     height: 150,
-    borderRadius: 100,
+    borderRadius: 100
   },
 
   menuContainer: {
     marginVertical: 30,
-    marginHorizontal: 30,
+    marginHorizontal: 30
   },
 
   menuBtn: {
     //marginVertical: 10,
-    padding: 15,
+    padding: 15
   },
 
   menuItem: {
-    fontSize: 20,
-  },
-});
+    fontSize: 20
+  }
+})
